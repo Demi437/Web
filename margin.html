@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS 邊界</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<div class="all">
+	<div class="title">
+		<h1>
+			CSS 邊界
+		</h1>
+	</div>
+	<div id="list">
+	<ul>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/">CSS語法教學</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/syntax.php">CSS語法</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/apply.php">CSS套用方式</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/media-types.php">CSS媒體類別</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/cascade.php">CSS串接</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/inheritance.php">CSS繼承</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/class-id.php">CSS Class與ID</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/div-span.php">CSS Div與Span</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/length-units.php">CSS長度單位</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/box-model.php">CSS盒子模式</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/margin.php">CSS邊界(Margin)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/border.php">CSS邊框(Border)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/padding.php">CSS留白(Padding)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/background.php">CSS背景(Background)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/color.php">CSS顏色</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/font.php">CSS字體</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/link.php">CSS連接</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/list.php">CSS清單(List)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/table.php">CSS表格(Table)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/position.php">CSS位置(Position)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/text.php">CSS文字(Text)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/float.php">CSS浮動(Float)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/clear.php">CSS清除(Clear)</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/cursor.php">CSS滑鼠游標圖案</a></li>
+		<li><a href="http://www.1keydata.com/css-tutorial/tw/codes.php">CSS樣式</a></li>
+	</ul>
+	</div>
+	<div id="content">
+		<h2>
+		<a href="http://www.1keydata.com/css-tutorial/tw/">CSS教學</a>
+		> 邊界
+		</h2>
+		<p>
+			如我們在
+			<a href="http://www.1keydata.com/css-tutorial/tw/box-model.php">盒子模式</a>
+			那一頁看到的，邊界 (margin) 是在邊框之外，並且是用來設定各個元素之間的距離。一個盒子有四個邊，所以我們可以對這四個邊逐一設定：
+		</p>
+		<li>margin-top (上邊界)</li>
+		<li>margin-right (右邊界)</li>
+		<li>margin-bottom (下邊界)</li>
+		<li>margin-left (左邊界)</li>
+		<p>
+			第五個屬性，
+			<a href="file:///C:/Users/User/Desktop/Web/margin.html#margin">margin</a>
+			，是用來作為同時設定四個邊的捷徑屬性。
+		</p>
+		<p>
+			有三種方式可以設定邊界，分別為長度、百分比、以及 'auto'。我們來看以下的例子：
+		</p>
+		<p class="code">
+			#container { <br>
+			margin-top:5px; <br>
+			margin-left:10%; <br>
+			margin-right:auto; <br>
+			margin-bottom:20px; <br>
+			border: 1px solid 000000; <br>
+			}
+		</p>
+		<p>
+			以下的 HTML 碼，
+		</p>
+		<p class="code">
+			<
+			div id="container"> <br>
+			這是邊界的例子。 <br>
+			<
+			/div> <br>
+		</p>
+		<p>
+			會顯示為，
+		</p>
+		<div id="container"> 
+				這是邊界的例子。 
+		</div>		
+		<p>
+			在這裡，上邊界為 5px，左邊界為 10%，下邊界為 20px。
+		</p>
+		<p id="shortcut">
+			邊界捷徑
+		</p>
+		<p>
+			所有四個邊的邊界可以同時由 <b>margin</b> 屬性設定。它的語法如下：
+		</p>
+		<p id="green">
+			margin: [上面邊界值] [右邊邊界值] [下面邊界值] [左邊邊界值]
+		</p>
+		<p>
+			在這裡，順序非常重要。第一個值一定是上邊界的值，第二個值一定是右邊界的值，第三個值一定是下邊界的值，而第四個值一定是左邊界的值。
+		</p>
+		<p class="next">
+			下一頁：
+			<a href="http://www.1keydata.com/css-tutorial/tw/border.php">CSS邊框</a>
+		</p>
+	</div>
+	</body>
+</html>
